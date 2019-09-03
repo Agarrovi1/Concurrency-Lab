@@ -13,14 +13,14 @@ struct Country: Codable {
     let population: String
     let currencies: Currency
     
-    static func getCountries(from data: Data) -> [Country] {
+    static func getCountries(from data: Data) -> [Country]? {
         do {
             let countries = try JSONDecoder().decode([Country].self, from: data)
             return countries
         } catch {
             print(error)
         }
-        return [Country]()
+        return nil
     }
     
     struct Currency: Codable {

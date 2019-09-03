@@ -12,10 +12,11 @@
 		4DAE9BCC231EE97800413AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE9BCA231EE97800413AB5 /* Main.storyboard */; };
 		4DAE9BCE231EE97900413AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE9BCD231EE97900413AB5 /* Assets.xcassets */; };
 		4DAE9BD1231EE97900413AB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE9BCF231EE97900413AB5 /* LaunchScreen.storyboard */; };
-		4DAE9BDC231EE97900413AB5 /* ConcurrencyLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BDB231EE97900413AB5 /* ConcurrencyLabTests.swift */; };
-		4DAE9BE6231EEAD800413AB5 /* ConcurrencyLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BDB231EE97900413AB5 /* ConcurrencyLabTests.swift */; };
 		4DAE9BE8231EEAFB00413AB5 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BE7231EEAFB00413AB5 /* Countries.swift */; };
-		4DAE9BE9231EED3700413AB5 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BE7231EEAFB00413AB5 /* Countries.swift */; };
+		4DAE9BEC231EF01E00413AB5 /* CountryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */; };
+		4DAE9BF1231EF57000413AB5 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BE7231EEAFB00413AB5 /* Countries.swift */; };
+		4DAE9BF2231EF57600413AB5 /* CountryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */; };
+		4DAE9BF3231EF5AD00413AB5 /* ConcurrencyLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BDB231EE97900413AB5 /* ConcurrencyLabTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4DAE9BDB231EE97900413AB5 /* ConcurrencyLabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyLabTests.swift; sourceTree = "<group>"; };
 		4DAE9BDD231EE97900413AB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DAE9BE7231EEAFB00413AB5 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,7 @@
 			children = (
 				4DAE9BC6231EE97800413AB5 /* AppDelegate.swift */,
 				4DAE9BC8231EE97800413AB5 /* ViewController.swift */,
-				4DAE9BE7231EEAFB00413AB5 /* Countries.swift */,
+				4DAE9BEA231EF00800413AB5 /* Models */,
 				4DAE9BCA231EE97800413AB5 /* Main.storyboard */,
 				4DAE9BCD231EE97900413AB5 /* Assets.xcassets */,
 				4DAE9BCF231EE97900413AB5 /* LaunchScreen.storyboard */,
@@ -99,6 +101,15 @@
 				4DAE9BDD231EE97900413AB5 /* Info.plist */,
 			);
 			path = ConcurrencyLabTests;
+			sourceTree = "<group>";
+		};
+		4DAE9BEA231EF00800413AB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE9BE7231EEAFB00413AB5 /* Countries.swift */,
+				4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +216,7 @@
 				4DAE9BC9231EE97800413AB5 /* ViewController.swift in Sources */,
 				4DAE9BC7231EE97800413AB5 /* AppDelegate.swift in Sources */,
 				4DAE9BE8231EEAFB00413AB5 /* Countries.swift in Sources */,
-				4DAE9BE6231EEAD800413AB5 /* ConcurrencyLabTests.swift in Sources */,
+				4DAE9BEC231EF01E00413AB5 /* CountryClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,8 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DAE9BE9231EED3700413AB5 /* Countries.swift in Sources */,
-				4DAE9BDC231EE97900413AB5 /* ConcurrencyLabTests.swift in Sources */,
+				4DAE9BF2231EF57600413AB5 /* CountryClient.swift in Sources */,
+				4DAE9BF1231EF57000413AB5 /* Countries.swift in Sources */,
+				4DAE9BF3231EF5AD00413AB5 /* ConcurrencyLabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

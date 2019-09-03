@@ -31,9 +31,19 @@ class ConcurrencyLabTests: XCTestCase {
         }
     }
     func testCountriesInArray() {
-        let data = Data()
-        let countries = Country.getCountries(from: data)
-        XCTAssertTrue(countries.count > 0, "expected countries but got \(countries.count)")
+        var countries = [Country]() {
+            didSet {
+                XCTAssertTrue(countries.count > 0, "expected countries but got \(countries.count)")
+            }
+        }
+        CountryAPIClient.shared.getCountries { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let countriesFromURL):
+                countries = countriesFromURL
+            }
+        }
     }
 
 }
