@@ -32,7 +32,7 @@ class ConcurrencyLabTests: XCTestCase {
     }
     func testCountriesInArray() {
         let data = Data()
-        let countries = Countries.getCountries(from: data)
+        let countries = Country.getCountries(from: data)
         XCTAssertTrue(countries.count > 0, "expected countries but got \(countries.count)")
     }
 
