@@ -84,7 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				4DAE9BC6231EE97800413AB5 /* AppDelegate.swift */,
-				4DAE9BC8231EE97800413AB5 /* CountryViewController.swift */,
+				4DAE9BF5231EF76800413AB5 /* Views */,
+				4DAE9BF4231EF75700413AB5 /* View Controllers */,
 				4DAE9BEA231EF00800413AB5 /* Models */,
 				4DAE9BCA231EE97800413AB5 /* Main.storyboard */,
 				4DAE9BCD231EE97900413AB5 /* Assets.xcassets */,
@@ -110,6 +111,21 @@
 				4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4DAE9BF4231EF75700413AB5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE9BC8231EE97800413AB5 /* CountryViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4DAE9BF5231EF76800413AB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
