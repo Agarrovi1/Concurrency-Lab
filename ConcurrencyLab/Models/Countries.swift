@@ -7,11 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+
 struct Country: Codable {
     let name: String
     let capital: String
-    let population: String
-    let currencies: Currency
+    let population: Int
+    let currencies: [Currency]
+    let flag: String
     
     static func getCountries(from data: Data) -> [Country]? {
         do {
@@ -21,6 +25,18 @@ struct Country: Codable {
             print(error)
         }
         return nil
+    }
+    
+    func getFlagPicture() -> UIImage? {
+        guard let url = URL(string: flag) else {return UIImage()}
+        do {
+        let data = try Data(contentsOf: url)
+            let image = UIImage(data: data)
+            return image
+        } catch {
+            print(error)
+        }
+        return UIImage()
     }
     
     struct Currency: Codable {
