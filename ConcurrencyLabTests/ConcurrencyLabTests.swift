@@ -30,5 +30,10 @@ class ConcurrencyLabTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    func testCountriesInArray() {
+        let data = Data()
+        let countries = Countries.getCountries(from: data)
+        XCTAssertTrue(countries.count > 0, "expected countries but got \(countries.count)")
+    }
 
 }
