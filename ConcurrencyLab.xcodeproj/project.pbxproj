@@ -18,6 +18,7 @@
 		4DAE9BF2231EF57600413AB5 /* CountryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */; };
 		4DAE9BF3231EF5AD00413AB5 /* ConcurrencyLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BDB231EE97900413AB5 /* ConcurrencyLabTests.swift */; };
 		4DAE9BF7231EF8EE00413AB5 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BF6231EF8EE00413AB5 /* CountryTableViewCell.swift */; };
+		4DAE9BF9231F086100413AB5 /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BF8231F086100413AB5 /* CountryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4DAE9BE7231EEAFB00413AB5 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClient.swift; sourceTree = "<group>"; };
 		4DAE9BF6231EF8EE00413AB5 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		4DAE9BF8231F086100413AB5 /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4DAE9BC8231EE97800413AB5 /* CountryViewController.swift */,
+				4DAE9BF8231F086100413AB5 /* CountryDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DAE9BF9231F086100413AB5 /* CountryDetailViewController.swift in Sources */,
 				4DAE9BC9231EE97800413AB5 /* CountryViewController.swift in Sources */,
 				4DAE9BC7231EE97800413AB5 /* AppDelegate.swift in Sources */,
 				4DAE9BE8231EEAFB00413AB5 /* Countries.swift in Sources */,

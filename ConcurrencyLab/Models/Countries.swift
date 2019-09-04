@@ -28,7 +28,7 @@ struct Country: Codable {
     }
     
     func getFlagPicture() -> UIImage? {
-        guard let url = URL(string: flag) else {return UIImage()}
+        guard let url = URL(string: self.flag) else {return nil}
         do {
         let data = try Data(contentsOf: url)
             let image = UIImage(data: data)
@@ -36,7 +36,7 @@ struct Country: Codable {
         } catch {
             print(error)
         }
-        return UIImage()
+        return nil
     }
     
     struct Currency: Codable {
