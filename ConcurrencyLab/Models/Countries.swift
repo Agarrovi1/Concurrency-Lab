@@ -43,3 +43,15 @@ struct Country: Codable {
         var code: String
     }
 }
+
+func filter(countries: [Country], str: String) -> [Country] {
+//    var newArr = [Country]()
+//    for a in countries {
+//        let name = a.name.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: ",", with: "")
+//        if name.contains(str.lowercased()) {
+//            newArr.append(a)
+//        }
+//    }
+    return countries.filter({$0.name.lowercased().contains(str.lowercased())})
+//    return newArr
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D516FCA23214C0D002297A1 /* RatesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D516FC923214C0C002297A1 /* RatesAPIClient.swift */; };
 		4DAE9BC7231EE97800413AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BC6231EE97800413AB5 /* AppDelegate.swift */; };
 		4DAE9BC9231EE97800413AB5 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BC8231EE97800413AB5 /* CountryViewController.swift */; };
 		4DAE9BCC231EE97800413AB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE9BCA231EE97800413AB5 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		4DAE9BF3231EF5AD00413AB5 /* ConcurrencyLabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BDB231EE97900413AB5 /* ConcurrencyLabTests.swift */; };
 		4DAE9BF7231EF8EE00413AB5 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BF6231EF8EE00413AB5 /* CountryTableViewCell.swift */; };
 		4DAE9BF9231F086100413AB5 /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BF8231F086100413AB5 /* CountryDetailViewController.swift */; };
+		4DAE9BFB231F4D3B00413AB5 /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BFA231F4D3B00413AB5 /* ExchangeRates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D516FC923214C0C002297A1 /* RatesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesAPIClient.swift; sourceTree = "<group>"; };
 		4DAE9BC3231EE97800413AB5 /* ConcurrencyLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAE9BC6231EE97800413AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DAE9BC8231EE97800413AB5 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryClient.swift; sourceTree = "<group>"; };
 		4DAE9BF6231EF8EE00413AB5 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
 		4DAE9BF8231F086100413AB5 /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		4DAE9BFA231F4D3B00413AB5 /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			children = (
 				4DAE9BE7231EEAFB00413AB5 /* Countries.swift */,
 				4DAE9BEB231EF01E00413AB5 /* CountryClient.swift */,
+				4DAE9BFA231F4D3B00413AB5 /* ExchangeRates.swift */,
+				4D516FC923214C0C002297A1 /* RatesAPIClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +245,8 @@
 				4DAE9BC9231EE97800413AB5 /* CountryViewController.swift in Sources */,
 				4DAE9BC7231EE97800413AB5 /* AppDelegate.swift in Sources */,
 				4DAE9BE8231EEAFB00413AB5 /* Countries.swift in Sources */,
+				4DAE9BFB231F4D3B00413AB5 /* ExchangeRates.swift in Sources */,
+				4D516FCA23214C0D002297A1 /* RatesAPIClient.swift in Sources */,
 				4DAE9BEC231EF01E00413AB5 /* CountryClient.swift in Sources */,
 				4DAE9BF7231EF8EE00413AB5 /* CountryTableViewCell.swift in Sources */,
 			);
