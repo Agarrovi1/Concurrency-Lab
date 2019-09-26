@@ -12,6 +12,7 @@ import UIKit
 
 struct Country: Codable {
     let name: String
+    let alpha2Code: String
     let capital: String
     let population: Int
     let currencies: [Currency]
@@ -31,7 +32,7 @@ struct Country: Codable {
     }
     
     func getFlagPicture() -> UIImage? {
-        guard let url = URL(string: self.flag) else {return nil}
+        guard let url = URL(string: "https://www.countryflags.io/\(self.alpha2Code.lowercased())/shiny/64.png") else {return nil}
         do {
         let data = try Data(contentsOf: url)
             let image = UIImage(data: data)

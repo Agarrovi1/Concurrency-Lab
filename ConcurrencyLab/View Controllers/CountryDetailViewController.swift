@@ -34,6 +34,9 @@ class CountryDetailViewController: UIViewController {
         capitalLabel.text = "Capital: \(country.capital)"
         populationLabel.text = "Pop: \(country.population)"
     }
+    func loadImage() {
+        imageView.image = country?.getFlagPicture()
+    }
     func loadRates() {
         RatesAPIClient.manager.getRates { (results) in
             switch results {
