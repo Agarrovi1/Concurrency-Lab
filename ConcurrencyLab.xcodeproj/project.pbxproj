@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D424095233D35EE00329D9D /* CountryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D424094233D35EE00329D9D /* CountryCollectionViewController.swift */; };
+		4D424097233D376300329D9D /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D424096233D376300329D9D /* CountryCollectionViewCell.swift */; };
 		4D516FCA23214C0D002297A1 /* RatesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D516FC923214C0C002297A1 /* RatesAPIClient.swift */; };
 		4DAE9BC7231EE97800413AB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BC6231EE97800413AB5 /* AppDelegate.swift */; };
 		4DAE9BC9231EE97800413AB5 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE9BC8231EE97800413AB5 /* CountryViewController.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		4D424094233D35EE00329D9D /* CountryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewController.swift; sourceTree = "<group>"; };
+		4D424096233D376300329D9D /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D516FC923214C0C002297A1 /* RatesAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesAPIClient.swift; sourceTree = "<group>"; };
 		4DAE9BC3231EE97800413AB5 /* ConcurrencyLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAE9BC6231EE97800413AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				4DAE9BF6231EF8EE00413AB5 /* CountryTableViewCell.swift */,
+				4D424096233D376300329D9D /* CountryCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D424095233D35EE00329D9D /* CountryCollectionViewController.swift in Sources */,
+				4D424097233D376300329D9D /* CountryCollectionViewCell.swift in Sources */,
 				4DAE9BF9231F086100413AB5 /* CountryDetailViewController.swift in Sources */,
 				4DAE9BC9231EE97800413AB5 /* CountryViewController.swift in Sources */,
 				4DAE9BC7231EE97800413AB5 /* AppDelegate.swift in Sources */,
