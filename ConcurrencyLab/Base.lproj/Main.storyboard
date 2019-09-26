@@ -161,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIp-ha-sv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2610.144927536232" y="18.75"/>
+            <point key="canvasLocation" x="2897" y="19"/>
         </scene>
         <!--TableView-->
         <scene sceneID="DDj-mB-gi6">
@@ -182,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="18.75"/>
         </scene>
-        <!--CollectionView-->
+        <!--Country Collection View Controller-->
         <scene sceneID="VdD-hp-QdZ">
             <objects>
                 <collectionViewController id="ylM-Wb-HrJ" customClass="CountryCollectionViewController" customModule="ConcurrencyLab" customModuleProvider="target" sceneMemberID="viewController">
@@ -253,6 +253,7 @@
                                     <outlet property="capitalLabel" destination="YdZ-AT-xki" id="wH0-7o-qXa"/>
                                     <outlet property="nameLabel" destination="Z1K-nQ-hJG" id="IWh-XJ-mSu"/>
                                     <outlet property="populationLabel" destination="7b3-Mj-AeT" id="Dig-KU-NPR"/>
+                                    <segue destination="Q4Z-kl-sHi" kind="show" id="ZQX-Wz-nvO"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -261,11 +262,11 @@
                             <outlet property="delegate" destination="ylM-Wb-HrJ" id="ohb-LA-PBr"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="CollectionView" id="Vxj-Ze-fG8"/>
+                    <navigationItem key="navigationItem" id="dMD-MH-B5h"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e1-kf-uL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.92753623188412" y="751.33928571428567"/>
+            <point key="canvasLocation" x="1855.072463768116" y="751.33928571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="70B-OM-JnW">
@@ -278,12 +279,34 @@
                     </tabBar>
                     <connections>
                         <segue destination="9H4-LB-muX" kind="relationship" relationship="viewControllers" id="Uul-bB-FvE"/>
-                        <segue destination="ylM-Wb-HrJ" kind="relationship" relationship="viewControllers" id="JUB-hK-3M5"/>
+                        <segue destination="ueb-rc-59P" kind="relationship" relationship="viewControllers" id="JUB-hK-3M5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CNY-m0-vAH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
         </scene>
+        <!--CollectionView-->
+        <scene sceneID="UQl-8A-YrK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ueb-rc-59P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CollectionView" id="Vxj-Ze-fG8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ya8-fs-Dc1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ylM-Wb-HrJ" kind="relationship" relationship="rootViewController" id="SJF-Ir-7kd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLf-bX-Zta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="751.33928571428567"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZQX-Wz-nvO"/>
+    </inferredMetricsTieBreakers>
 </document>
