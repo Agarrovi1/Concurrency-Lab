@@ -10,7 +10,6 @@ import UIKit
 
 class CountryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var populationLabel: UILabel!
-    
-    @IBOutlet weak var capitolLabel: UILabel!
+    @IBOutlet weak var capitalLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
 }

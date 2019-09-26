@@ -163,11 +163,11 @@
             </objects>
             <point key="canvasLocation" x="2610.144927536232" y="18.75"/>
         </scene>
-        <!--Item-->
+        <!--TableView-->
         <scene sceneID="DDj-mB-gi6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9H4-LB-muX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5KA-TA-QQr"/>
+                    <tabBarItem key="tabBarItem" title="TableView" id="5KA-TA-QQr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Dk-nq-Y79">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -182,7 +182,7 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="18.75"/>
         </scene>
-        <!--Item-->
+        <!--CollectionView-->
         <scene sceneID="VdD-hp-QdZ">
             <objects>
                 <collectionViewController id="ylM-Wb-HrJ" customClass="CountryCollectionViewController" customModule="ConcurrencyLab" customModuleProvider="target" sceneMemberID="viewController">
@@ -250,7 +250,7 @@
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="338" height="190"/>
                                 <connections>
-                                    <outlet property="capitolLabel" destination="YdZ-AT-xki" id="wH0-7o-qXa"/>
+                                    <outlet property="capitalLabel" destination="YdZ-AT-xki" id="wH0-7o-qXa"/>
                                     <outlet property="nameLabel" destination="Z1K-nQ-hJG" id="IWh-XJ-mSu"/>
                                     <outlet property="populationLabel" destination="7b3-Mj-AeT" id="Dig-KU-NPR"/>
                                 </connections>
@@ -261,7 +261,7 @@
                             <outlet property="delegate" destination="ylM-Wb-HrJ" id="ohb-LA-PBr"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Vxj-Ze-fG8"/>
+                    <tabBarItem key="tabBarItem" title="CollectionView" id="Vxj-Ze-fG8"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e1-kf-uL0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,6 +11,25 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class CountryCollectionViewController: UICollectionViewController {
+    
+    var countries = [Country]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
+    }
+    
+    func loadData() {
+        CountryAPIClient.shared.getCountries { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let countriesFromURL):
+                self.countries = countriesFromURL
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +41,7 @@ class CountryCollectionViewController: UICollectionViewController {
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+        loadData()
     }
 
     /*
@@ -42,15 +62,17 @@ class CountryCollectionViewController: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return countries.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCellOne", for: indexPath) as? CountryCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        let country = countries[indexPath.row]
+        cell.nameLabel.text = country.name
+        cell.capitalLabel.text = country.capital
+        cell.populationLabel.text = "Population: \(country.population)"
         return cell
     }
 
