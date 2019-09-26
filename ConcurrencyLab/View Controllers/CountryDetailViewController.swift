@@ -13,8 +13,20 @@ class CountryDetailViewController: UIViewController {
     @IBOutlet weak var capitalLabel: UILabel!
     @IBOutlet weak var populationLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var exchangeRatesLabel: UILabel!
     
-    var country: Country?
+    var rates = [ExchangeRates]() {
+        didSet {
+            getCurrencyInUSD(rate: rates[0].rates)
+        }
+    }
+    var country: Country? {
+        didSet{
+            loadRates()
+        }
+    }
+    
+    
     func loadData() {
         guard let country = country else {return}
         imageView.image = country.getFlagPicture()
@@ -22,20 +34,42 @@ class CountryDetailViewController: UIViewController {
         capitalLabel.text = "Capital: \(country.capital)"
         populationLabel.text = "Pop: \(country.population)"
     }
+    func loadRates() {
+        RatesAPIClient.manager.getRates { (results) in
+            switch results {
+            case .failure(let error):
+                print(error)
+            case .success(let ratesFromJSON):
+                DispatchQueue.main.async {
+                    self.rates = [ratesFromJSON]
+                }
+            }
+        }
+    }
+    func getCurrencyInUSD(rate: ExchangeRates.Rates) {
+        guard let country = country else {return}
+        
+        let mirror = Mirror(reflecting: rate)
+        var usd = Double()
+        var currentCurrency = Double()
+        for child in mirror.children {
+            if let key = child.label, key == "USD" {
+                usd = child.value as? Double ?? 1
+            }
+            
+            if let key = child.label, key == country.getCurrency() {
+                currentCurrency = child.value as? Double ?? 1
+            }
+        }
+        
+        exchangeRatesLabel.text = "Currency In USD: \(usd / currentCurrency)"
+            
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -16,6 +16,9 @@ struct Country: Codable {
     let population: Int
     let currencies: [Currency]
     let flag: String
+    func getCurrency() -> String {
+        return self.currencies[0].code
+    }
     
     static func getCountries(from data: Data) -> [Country]? {
         do {

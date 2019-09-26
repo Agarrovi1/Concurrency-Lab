@@ -180,9 +180,9 @@ struct ExchangeRates: Codable {
         let ZMW: Double
         let ZWL: Double
     }
-    static func getExchangeRates(from data: Data) -> Rates? {
+    static func getExchangeRates(from data: Data) -> ExchangeRates? {
         do {
-            let rates = try JSONDecoder().decode(Rates.self, from: data)
+            let rates = try JSONDecoder().decode(ExchangeRates.self, from: data)
             return rates
         } catch {
             print(error)
