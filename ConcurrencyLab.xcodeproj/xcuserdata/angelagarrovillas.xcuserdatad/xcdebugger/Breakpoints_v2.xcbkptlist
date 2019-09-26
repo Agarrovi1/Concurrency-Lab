@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "D7B975B1-1174-4C1F-BC88-7D185D06BEB9"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "7007ABF3-A8EA-4B2D-96A0-4C2476C21345"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConcurrencyLab/Models/Countries.swift"
@@ -14,12 +16,11 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "filter(countries:str:)"
-            landmarkType = "9">
+            endingLineNumber = "55">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "7007ABF3-A8EA-4B2D-96A0-4C2476C21345 - cb1b03fe4117e5b9"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "ConcurrencyLab.filter(countries: Swift.Array&lt;ConcurrencyLab.Country&gt;, str: Swift.String) -&gt; Swift.Array&lt;ConcurrencyLab.Country&gt;"
@@ -34,7 +35,8 @@
                   offsetFromSymbolStart = "47">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  uuid = "7007ABF3-A8EA-4B2D-96A0-4C2476C21345 - b3ec911b8d292b01"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (ConcurrencyLab.Country) -&gt; Swift.Bool in ConcurrencyLab.filter(countries: Swift.Array&lt;ConcurrencyLab.Country&gt;, str: Swift.String) -&gt; Swift.Array&lt;ConcurrencyLab.Country&gt;"
@@ -54,7 +56,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            uuid = "6E43B89E-F2A1-43B7-A575-85EBB26C944C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConcurrencyLab/View Controllers/CountryViewController.swift"
